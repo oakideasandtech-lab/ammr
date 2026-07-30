@@ -357,45 +357,57 @@ img {
 .hero-visual {
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 .visual-wrapper {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-wave-svg {
+.wave-bg {
     position: absolute;
-    top: 0;
-    right: -100px;
-    width: 680px;
-    height: 680px;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 10px solid var(--accent);
+    box-shadow: 0 0 0 10px var(--bg-white), 0 0 0 20px var(--primary-light);
     z-index: 1;
-    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.08));
+}
+
+.coastal-bg {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid var(--bg-white);
+    box-shadow: var(--shadow-md);
+    z-index: 2;
+    overflow: hidden;
 }
 
 .hero-laptop-img {
     position: absolute;
     z-index: 3;
     width: 100%;
-    max-width: 530px;
-    right: -30px;
-    bottom: 30px;
-    filter: drop-shadow(0 25px 45px rgba(0,0,0,0.22));
+    max-width: 320px; /* Scaled down to show the circle and content */
+    bottom: 50px;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.18));
     animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(-0.5deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
 }
 
 
