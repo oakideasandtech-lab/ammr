@@ -867,6 +867,30 @@ img {
 
     .hero-visual {
         order: -1;
+        margin-bottom: 20px;
+    }
+
+    .visual-wrapper {
+        width: 420px;
+        height: 420px;
+    }
+
+    .wave-bg {
+        width: 400px;
+        height: 400px;
+        border-width: 8px;
+        box-shadow: 0 0 0 8px var(--bg-white), 0 0 0 16px var(--primary-light);
+    }
+
+    .coastal-bg {
+        width: 320px;
+        height: 320px;
+        border-width: 6px;
+    }
+
+    .hero-laptop-img {
+        max-width: 270px;
+        bottom: 45px;
     }
 
     .services-grid {
@@ -926,6 +950,34 @@ img {
 
     .hero-title {
         font-size: 2.2rem;
+    }
+
+    .hero-visual {
+        order: -1;
+        margin-bottom: 10px;
+    }
+
+    .visual-wrapper {
+        width: 310px;
+        height: 310px;
+    }
+
+    .wave-bg {
+        width: 290px;
+        height: 290px;
+        border-width: 6px;
+        box-shadow: 0 0 0 6px var(--bg-white), 0 0 0 12px var(--primary-light);
+    }
+
+    .coastal-bg {
+        width: 230px;
+        height: 230px;
+        border-width: 5px;
+    }
+
+    .hero-laptop-img {
+        max-width: 190px;
+        bottom: 35px;
     }
 
     .services-grid {
