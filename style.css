@@ -364,52 +364,37 @@ img {
 
 .visual-wrapper {
     position: relative;
-    width: 580px;
-    height: 580px;
+    width: 600px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wave-bg {
+.hero-wave-svg {
     position: absolute;
     top: 0;
     right: -100px;
-    width: 580px;
-    height: 580px;
-    border-radius: 50%;
-    border: 12px solid var(--accent);
-    box-shadow: 0 0 0 12px var(--bg-white), 0 0 0 24px var(--primary-light);
+    width: 680px;
+    height: 680px;
     z-index: 1;
-}
-
-.coastal-bg {
-    position: absolute;
-    top: 0;
-    right: -100px;
-    width: 580px;
-    height: 580px;
-    border-radius: 50%;
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
-    overflow: hidden;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.08));
 }
 
 .hero-laptop-img {
     position: absolute;
     z-index: 3;
     width: 100%;
-    max-width: 520px;
-    right: -50px;
-    bottom: 40px;
-    filter: drop-shadow(0 25px 45px rgba(0,0,0,0.25));
+    max-width: 530px;
+    right: -30px;
+    bottom: 30px;
+    filter: drop-shadow(0 25px 45px rgba(0,0,0,0.22));
     animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
     0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(-1deg); }
+    50% { transform: translateY(-10px) rotate(-0.5deg); }
     100% { transform: translateY(0px) rotate(0deg); }
 }
 

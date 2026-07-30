@@ -92,10 +92,21 @@
             </div>
             
             <div class="hero-visual">
-                <!-- Curved frame mimicking the orange/blue concentric waves in the mockup -->
                 <div class="visual-wrapper">
-                    <div class="wave-bg"></div>
-                    <div class="coastal-bg" style="background-image: url('assets/images/malindi_aerial.png');"></div>
+                    <!-- Concentric curved waves using SVG for pixel-perfect design rendering -->
+                    <svg class="hero-wave-svg" viewBox="0 0 600 600" preserveAspectRatio="none">
+                        <defs>
+                            <clipPath id="ocean-clip">
+                                <path d="M 600,0 C 280,60 180,320 420,600 L 600,600 Z" />
+                            </clipPath>
+                        </defs>
+                        <!-- Outer Blue Wave -->
+                        <path d="M 600,0 C 240,55 130,315 385,600" fill="none" stroke="#1E88E5" stroke-width="14" />
+                        <!-- Inner Orange Wave -->
+                        <path d="M 600,0 C 260,57 155,317 402,600" fill="none" stroke="#FF5722" stroke-width="14" />
+                        <!-- Clipped Ocean Background -->
+                        <image href="assets/images/malindi_aerial.png" x="0" y="0" width="600" height="600" preserveAspectRatio="xMidYMid slice" clip-path="url(#ocean-clip)" />
+                    </svg>
                     <img src="assets/images/hero_laptop.png" alt="Laptop showing network connections" class="hero-laptop-img">
                 </div>
             </div>
