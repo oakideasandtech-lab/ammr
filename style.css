@@ -976,31 +976,48 @@ img {
         display: none;
     }
 
-    .nav-portal-mobile-only {
-        display: block;
+    .mobile-menu-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         margin-top: 16px;
         border-top: 1px solid var(--border-color);
         padding-top: 20px;
+        width: 100%;
     }
 
-    .portal-link-mobile {
+    .portal-link-mobile,
+    .phone-link-mobile {
         display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 8px;
-        background-color: var(--accent);
-        color: var(--bg-white) !important;
         padding: 12px 24px;
         border-radius: 8px;
         font-weight: 700;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         width: 100%;
-        box-shadow: 0 4px 10px rgba(255, 87, 34, 0.2);
         transition: var(--transition-fast);
+    }
+
+    .portal-link-mobile {
+        background-color: var(--accent);
+        color: var(--bg-white) !important;
+        box-shadow: 0 4px 10px rgba(255, 87, 34, 0.2);
     }
 
     .portal-link-mobile:hover {
         background-color: var(--accent-hover);
+    }
+
+    .phone-link-mobile {
+        background-color: var(--primary);
+        color: var(--bg-white) !important;
+        box-shadow: 0 4px 10px rgba(13, 71, 161, 0.2);
+    }
+
+    .phone-link-mobile:hover {
+        background-color: var(--primary-light);
     }
 
     .hero-title {
