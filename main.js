@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initStickyHeader();
     initStatsCounter();
+    initCurrentYear();
 });
 
 // Mobile Navigation Toggle
@@ -76,6 +77,14 @@ function trackActiveLink() {
             link.classList.add('active');
         }
     });
+}
+
+// Auto-update copyright year
+function initCurrentYear() {
+    const yearSpan = document.getElementById('current-year');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
 }
 
 // Stats Counter Animation

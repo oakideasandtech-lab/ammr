@@ -865,6 +865,17 @@ img {
     gap: 16px;
 }
 
+.oak-link {
+    color: var(--accent);
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.oak-link:hover {
+    color: var(--bg-white);
+    text-decoration: underline;
+}
+
 .heart {
     color: var(--accent);
     display: inline-block;
