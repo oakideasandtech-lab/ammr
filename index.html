@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMMRlink Solutions provides reliable IT solutions, faster internet connections, and network solutions for homes and businesses in Malindi, Kenya.">
+    <title>AMMRlink Solutions - Reliable IT Solutions in Malindi</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo-area">
+                <!-- Inline SVG Logo inspired by the screenshot -->
+                <svg class="logo-svg" viewBox="0 0 100 100" width="50" height="50">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#FF5722" stroke-width="4" />
+                    <ellipse cx="50" cy="50" rx="30" ry="10" fill="none" stroke="#0D47A1" stroke-width="2" transform="rotate(-30 50 50)" />
+                    <ellipse cx="50" cy="50" rx="30" ry="10" fill="none" stroke="#0D47A1" stroke-width="2" transform="rotate(30 50 50)" />
+                    <line x1="50" y1="10" x2="50" y2="90" stroke="#0D47A1" stroke-width="2" />
+                    <line x1="10" y1="50" x2="90" y2="50" stroke="#0D47A1" stroke-width="2" />
+                    <circle cx="50" cy="50" r="6" fill="#FF5722" />
+                </svg>
+                <div class="logo-text">
+                    <span class="brand-name">AMMRlink</span>
+                    <span class="brand-sub">- SOLUTIONS -</span>
+                </div>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i data-lucide="menu"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#our-work">Our Work</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Top Contact Link -->
+            <div class="header-phone">
+                <a href="tel:0725756924" class="phone-pill">
+                    <i data-lucide="phone-call" class="pulse-icon"></i>
+                    <span>0725756924</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    RELIABLE IT SOLUTIONS.<br>
+                    <span class="highlight-blue">FASTER CONNECTIONS.</span><br>
+                    <span class="highlight-orange">STRONGER BUSINESSES.</span>
+                </h1>
+                <p class="hero-description">
+                    AMMRlink Solutions provides innovative, reliable and affordable technology services to homes, businesses and organizations in Malindi.
+                </p>
+                <div class="hero-actions">
+                    <a href="tel:0725756924" class="action-btn call-btn">
+                        <i data-lucide="phone"></i>
+                        <div>
+                            <span class="btn-subtext">CALL US TODAY</span>
+                            <span class="btn-maintext">0725756924</span>
+                        </div>
+                    </a>
+                    <div class="action-badge location-badge">
+                        <i data-lucide="map-pin"></i>
+                        <div>
+                            <span class="badge-subtext">PROUDLY IN NOW</span>
+                            <span class="badge-maintext">MALINDI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- Curved frame mimicking the orange/blue concentric waves in the mockup -->
+                <div class="visual-wrapper">
+                    <div class="wave-bg"></div>
+                    <div class="coastal-bg" style="background-image: url('assets/images/malindi_aerial.png');"></div>
+                    <img src="assets/images/hero_laptop.png" alt="Laptop showing network connections" class="hero-laptop-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">OUR <span class="highlight-blue">SERVICES</span></h2>
+                <p class="section-subtitle">End-to-end technology solutions designed to keep you connected, secure and productive.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Internet Services -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper wifi-gradient">
+                        <i data-lucide="wifi"></i>
+                    </div>
+                    <h3 class="service-title">INTERNET SERVICES</h3>
+                    <p class="service-desc">High-speed, reliable internet solutions for homes and businesses.</p>
+                </div>
+
+                <!-- Service 2: IT Support -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper support-gradient">
+                        <i data-lucide="laptop-2"></i>
+                    </div>
+                    <h3 class="service-title">IT SUPPORT</h3>
+                    <p class="service-desc">Professional support and maintenance to keep your systems running smoothly.</p>
+                </div>
+
+                <!-- Service 3: Network Solutions -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper network-gradient">
+                        <i data-lucide="shield-alert"></i>
+                    </div>
+                    <h3 class="service-title">NETWORK SOLUTIONS</h3>
+                    <p class="service-desc">Secure and scalable network design, installation and management.</p>
+                </div>
+
+                <!-- Service 4: CCTV & Security -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper cctv-gradient">
+                        <i data-lucide="camera"></i>
+                    </div>
+                    <h3 class="service-title">CCTV & SECURITY SYSTEMS</h3>
+                    <p class="service-desc">Advanced surveillance solutions to protect what matters most.</p>
+                </div>
+
+                <!-- Service 5: Printer & Peripheral -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper printer-gradient">
+                        <i data-lucide="printer"></i>
+                    </div>
+                    <h3 class="service-title">PRINTER & PERIPHERAL</h3>
+                    <p class="service-desc">Sales, setup and maintenance of all printer types and accessories.</p>
+                </div>
+
+                <!-- Service 6: Computer Sales -->
+                <div class="service-card">
+                    <div class="service-icon-wrapper repair-gradient">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <h3 class="service-title">COMPUTER SALES & REPAIRS</h3>
+                    <p class="service-desc">Quality devices and expert repairs to keep you productive.</p>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <a href="#contact" class="btn-secondary">VIEW ALL SERVICES <i data-lucide="chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose & About Us Section -->
+    <section id="about" class="about-why-section">
+        <div class="container">
+            <div class="grid-three-col">
+                <!-- Column 1: Why Choose -->
+                <div class="col-why">
+                    <h2 class="sub-title">WHY CHOOSE<br><span class="highlight-blue">AMMRlink Solutions?</span></h2>
+                    
+                    <ul class="why-list">
+                        <li>
+                            <i data-lucide="check-circle-2" class="check-icon"></i>
+                            <span>Reliable & Fast Service</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" class="check-icon"></i>
+                            <span>Experienced & Certified Team</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" class="check-icon"></i>
+                            <span>Affordable & Transparent Pricing</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" class="check-icon"></i>
+                            <span>Customer Satisfaction Guaranteed</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check-circle-2" class="check-icon"></i>
+                            <span>Local Support</span>
+                        </li>
+                    </ul>
+
+                    <div class="partner-callout">
+                        <i data-lucide="handshake" class="handshake-icon"></i>
+                        <p>YOUR TRUSTED TECHNOLOGY PARTNER IN <span class="highlight-orange">MALINDI.</span></p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Connecting Malindi Image -->
+                <div class="col-middle-banner">
+                    <div class="aerial-card" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/malindi_aerial.png');">
+                        <div class="wifi-indicator">
+                            <i data-lucide="wifi"></i>
+                        </div>
+                        <div class="banner-text">
+                            <h3>CONNECTING MALINDI.</h3>
+                            <h3>POWERING POSSIBILITIES.</h3>
+                            <h3 class="orange-text">DELIVERING SOLUTIONS.</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: About Us -->
+                <div class="col-about">
+                    <h2 class="sub-title">ABOUT US</h2>
+                    <hr class="title-line">
+                    <div class="about-text-content">
+                        <p>AMMRlink Solutions is a Malindi-based IT solutions provider committed to delivering innovative, reliable and affordable technology services.</p>
+                        <p>We help businesses and homes stay connected, secure and productive in today's digital world.</p>
+                    </div>
+                    <a href="#contact" class="btn-secondary">LEARN MORE ABOUT US <i data-lucide="chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar-section">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <div class="stat-icon"><i data-lucide="users"></i></div>
+                <div class="stat-details">
+                    <span class="stat-number" data-target="100">0</span><span class="plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i data-lucide="wifi"></i></div>
+                <div class="stat-details">
+                    <span class="stat-number" data-target="500">0</span><span class="plus">+</span>
+                    <span class="stat-label">Connections Delivered</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i data-lucide="shield-check"></i></div>
+                <div class="stat-details">
+                    <span class="stat-number-text">24/7</span>
+                    <span class="stat-label">Support Available</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i data-lucide="map-pin"></i></div>
+                <div class="stat-details">
+                    <span class="stat-number" data-target="1">0</span>
+                    <span class="stat-label">Location – Malindi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section" style="background-image: linear-gradient(rgba(10, 25, 47, 0.9), rgba(10, 25, 47, 0.9)), url('assets/images/server_rack_bg.png');">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>LET'S <span class="highlight-orange">CONNECT YOUR WORLD.</span></h2>
+                <p>Get reliable IT solutions tailored to your needs.</p>
+            </div>
+            <div class="cta-action">
+                <a href="#contact" class="btn-primary">GET IN TOUCH TODAY <i data-lucide="chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-grid">
+            <!-- Footer Col 1: Brand Info -->
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-area light">
+                    <svg class="logo-svg" viewBox="0 0 100 100" width="40" height="40">
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#FF5722" stroke-width="4" />
+                        <ellipse cx="50" cy="50" rx="30" ry="10" fill="none" stroke="#FFFFFF" stroke-width="2" transform="rotate(-30 50 50)" />
+                        <ellipse cx="50" cy="50" rx="30" ry="10" fill="none" stroke="#FFFFFF" stroke-width="2" transform="rotate(30 50 50)" />
+                        <line x1="50" y1="10" x2="50" y2="90" stroke="#FFFFFF" stroke-width="2" />
+                        <line x1="10" y1="50" x2="90" y2="50" stroke="#FFFFFF" stroke-width="2" />
+                        <circle cx="50" cy="50" r="6" fill="#FF5722" />
+                    </svg>
+                    <div class="logo-text">
+                        <span class="brand-name white-text">AMMRlink</span>
+                        <span class="brand-sub grey-text">- SOLUTIONS -</span>
+                    </div>
+                </a>
+                <p class="footer-desc">
+                    Reliable IT solutions for homes, businesses and organizations in Malindi.
+                </p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="https://wa.me/254725756924" target="_blank" aria-label="WhatsApp"><i data-lucide="message-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Footer Col 2: Quick Links -->
+            <div class="footer-col links-col">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#our-work">Our Work</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 3: Services -->
+            <div class="footer-col links-col">
+                <h3>OUR SERVICES</h3>
+                <ul>
+                    <li><a href="#services">Internet Services</a></li>
+                    <li><a href="#services">IT Support</a></li>
+                    <li><a href="#services">Network Solutions</a></li>
+                    <li><a href="#services">CCTV & Security Systems</a></li>
+                    <li><a href="#services">Printer & Peripheral</a></li>
+                    <li><a href="#services">Computer Sales & Repairs</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Col 4: Contact Us -->
+            <div class="footer-col contact-col">
+                <h3>CONTACT US</h3>
+                <ul class="contact-details-list">
+                    <li>
+                        <i data-lucide="phone"></i>
+                        <a href="tel:0725756924">0725756924</a>
+                    </li>
+                    <li>
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:sales.ammrlinksolutions@proton.me">sales.ammrlinksolutions@proton.me</a>
+                    </li>
+                    <li>
+                        <i data-lucide="map-pin"></i>
+                        <span>Malindi, Kenya</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2025 AMMRlink Solutions. All Rights Reserved.</p>
+                <p>Built with <span class="heart">❤️</span> in Malindi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Javascript -->
+    <script src="main.js"></script>
+</body>
+</html>
