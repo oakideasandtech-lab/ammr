@@ -919,11 +919,11 @@ img {
     }
 
     .main-navigation {
-        position: fixed;
-        top: 80px;
+        position: absolute;
+        top: 100%;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 100%);
         background-color: var(--bg-white);
         padding: 40px 24px;
         transition: var(--transition-normal);
