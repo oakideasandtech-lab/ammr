@@ -215,8 +215,35 @@ img {
     width: 100%;
 }
 
-.header-phone {
+.header-action-pills {
     display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.portal-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.portal-pill:hover {
+    background-color: var(--accent);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.2);
+}
+
+.nav-portal-mobile-only {
+    display: none;
 }
 
 .phone-pill {
@@ -945,8 +972,35 @@ img {
         font-size: 1.2rem;
     }
 
-    .header-phone {
+    .header-action-pills {
         display: none;
+    }
+
+    .nav-portal-mobile-only {
+        display: block;
+        margin-top: 16px;
+        border-top: 1px solid var(--border-color);
+        padding-top: 20px;
+    }
+
+    .portal-link-mobile {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        background-color: var(--accent);
+        color: var(--bg-white) !important;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(255, 87, 34, 0.2);
+        transition: var(--transition-fast);
+    }
+
+    .portal-link-mobile:hover {
+        background-color: var(--accent-hover);
     }
 
     .hero-title {
