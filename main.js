@@ -17,11 +17,10 @@ function initMobileNav() {
             mainNav.classList.toggle('active');
             
             // Toggle icon menu / close
-            const icon = toggleBtn.querySelector('i');
             if (mainNav.classList.contains('active')) {
-                icon.setAttribute('data-lucide', 'x');
+                toggleBtn.innerHTML = '<i data-lucide="x"></i>';
             } else {
-                icon.setAttribute('data-lucide', 'menu');
+                toggleBtn.innerHTML = '<i data-lucide="menu"></i>';
             }
             lucide.createIcons();
         });
@@ -31,8 +30,7 @@ function initMobileNav() {
             link.addEventListener('click', () => {
                 if (mainNav.classList.contains('active')) {
                     mainNav.classList.remove('active');
-                    const icon = toggleBtn.querySelector('i');
-                    icon.setAttribute('data-lucide', 'menu');
+                    toggleBtn.innerHTML = '<i data-lucide="menu"></i>';
                     lucide.createIcons();
                 }
             });
