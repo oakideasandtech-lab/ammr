@@ -521,16 +521,12 @@ img {
 }
 
 /* Card Gradient Specifics */
-.wifi-gradient { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
 .support-gradient { background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%); }
 .network-gradient { background: linear-gradient(135deg, #02AAB0 0%, #00CDAC 100%); }
 .cctv-gradient { background: linear-gradient(135deg, #f12711 0%, #f5af19 100%); }
-.printer-gradient { background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); }
 .repair-gradient { background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%); }
-.design-gradient { background: linear-gradient(135deg, #EC008C 0%, #FC6767 100%); }
 .database-gradient { background: linear-gradient(135deg, #396afc 0%, #2948ff 100%); }
 .marketing-gradient { background: linear-gradient(135deg, #F7971E 0%, #FFD200 100%); }
-.consultancy-gradient { background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); }
 
 .service-title {
     font-size: 1.15rem;
