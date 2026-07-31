@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     initStatsCounter();
     initCurrentYear();
+    initContactForm();
 });
 
 // Mobile Navigation Toggle
@@ -132,4 +133,56 @@ function initStatsCounter() {
     if (statsSection) {
         statsObserver.observe(statsSection);
     }
+}
+
+// Contact Form (Formspree) Submission
+function initContactForm() {
+    const form = document.querySelector('.contact-form');
+    const status = document.getElementById('form-status');
+
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const submitBtn = form.querySelector('.form-submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'SENDING... <i data-lucide="loader" class="spin-icon"></i>';
+        lucide.createIcons();
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                status.className = 'form-status success';
+                status.textContent = '✅ Thank you! Your message has been sent successfully. We will get back to you shortly.';
+                form.reset();
+            } else {
+                status.className = 'form-status error';
+                status.textContent = '⚠️ Oops! Something went wrong. Please try again.';
+            }
+        } catch (error) {
+            status.className = 'form-status error';
+            status.textContent = '⚠️ Network error. Please check your connection and try again.';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+            lucide.createIcons();
+
+            // Auto-hide status after 6 seconds
+            setTimeout(() => {
+                status.className = 'form-status';
+                status.textContent = '';
+            }, 6000);
+        }
+    });
 }
